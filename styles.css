@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+.logo {
+    /* border: solid yellow; */
+    padding-top: 2.5rem;
+    padding-left: 1rem;
+    width: 20vh;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e3e3e3;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    /* border: solid rgb(22, 5, 252); */
+    background-color: #a9bfff89;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+    /* border: solid greenyellow; */
+    width: 100%;
+    height: 80%;
+}
+
+.ingresaTexto {
+    width: 70%;
+    /* border: solid red; */
+}
+
+.seccionSalida {
+    width:25%;
+    /* border: solid blue; */
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: -5rem;
+    margin-right: 2.5rem;
+    margin-left: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+textarea {
+    width: 95%;
+    height: 60%;
+    margin: 0.625rem;
+    padding-left: 8.125rem;
+    font-size: 1.25rem;
+    resize: none;
+    /* border: solid green; */
+    background-color: transparent;
+    font-family: "Inter", sans-serif;
+    border: none;
+    outline: none;
+    
+    
+}
+
+#ingresaTextoTextarea::placeholder {
+    font-family: "Inter", sans-serif;
+    color: #0A3871;
+    font-size: 1.25rem;
+}
+
+
+.nota {
+    color: #495057;
+    padding-left:8.75rem;
+    margin-top: 3.125rem;
+}
+
+.botones {
+    padding: 0.625rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 3.5rem;
+    /* border: solid rgb(255, 54, 225); */
+    
+}
+
+button {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    border: solid 1px rgb(45, 0, 208);
+    padding: 0.5rem 6rem;
+    border-radius: 1rem;
+    transition: background-color 0.8s, color 0.8s; /* Transición suave para cambios */
+}
+
+
+.seccionSalida #botonCopiar {
+    margin-top: 15.5em;
+    padding: 0.5rem 2rem; /* Ajustar el padding según sea necesario */
+    border-radius: 1rem;
+}
+
+.botonPrimario {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.botonSecundario {
+    background-color: #e3e3e3;
+    color: #1e3a8a;
+    background-color: transparent;
+}
+
+#mensajeDefault {
+    margin-top: 2rem;
+    font-family: "Inter", sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#mensajeDefault strong {
+    color: #000000;
+    text-align: center;
+    font-size: 1.188rem;
+}
+
+.seccionSalida #mensajeSeccionSalida {
+    display: flex;
+    text-align: left;
+    margin-top: 5rem;
+    height: 6.25rem;
+    display: none;
+    color: rgb(0, 0, 0);
+    /* border: solid red; */
+}
+
+.img {
+    margin-top: 3rem;
+}
+
+/* Responsive para tablet */
+
+@media (max-width: 1440px) and (max-height: 1024px) {
+
+.container {
+    height: auto;
+}
+
+.logo {
+    width: 10vh;
+    padding-top: 1rem;
+}
+
+
+main {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.ingresaTexto, .seccionSalida {
+    width: 90%;
+    margin: 1rem 0;
+}
+
+button {
+    padding: 0.5rem 4.5rem;
+    margin-bottom: 0.5rem;
+}
+    
+.seccionSalida #botonCopiar {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+}
+
+#mensajeDefault {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}
+
+#mensajeDefault strong {
+    font-size: 1rem;
+}
+
+.seccionSalida #mensajeSeccionSalida {
+    height: auto;
+    margin-top: 1rem;
+}
+
+.img {
+    display: none;
+}
+
+}
+
+/* Responsive para celular */
+
+@media (max-width: 375px) and (max-height: 933px) {
+
+    .container {
+        height: auto;
+    }
+    
+    .logo {
+        width: 10vh;
+        padding-top: 1rem;
+    }
+    
+    
+    main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    
+    .ingresaTexto .seccionSalida {
+        width: 90%;
+        margin: 1rem 0;
+    }
+    
+    .botones {
+        flex-direction: column;
+    }
+
+    button {
+        padding: 0.5rem 4.5rem;
+        margin-bottom: 0.5rem;
+    }
+        
+    .seccionSalida #botonCopiar {
+        margin-top: 1rem;
+        padding: 0.5rem 2rem;
+    }
+    
+    #mensajeDefault {
+        margin-top: 1rem;
+        font-size: 0.875rem;
+    }
+    
+    #mensajeDefault strong {
+        font-size: 1rem;
+    }
+    
+    .seccionSalida #mensajeSeccionSalida {
+        height: auto;
+        margin-top: 1rem;
+    }
+    
+    .img {
+        display: none;
+    }
+    
+    .nota {
+        margin-left: -100px;
+    }
+
+    #ingresaTextoTextarea {
+        margin-left: -100px;
+        
+    }
+
+}
+    
